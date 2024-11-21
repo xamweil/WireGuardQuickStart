@@ -46,7 +46,7 @@ PostDown = sysctl -w net.ipv4.ip_forward=0; iptables -t nat -D POSTROUTING -s 10
 - **<your network interface\>:** Replace with the name of the network adapter (something like wlan0 or eth0). Can be found by typing ```ip addr``` in the terminal. 
 
 ### Enable IP Forwarding
-To make communication with other devices on the network possible IP forwarding mus be enables. To do this permanently add the following line to ```/etc/sysctl.conf```:
+To make communication with other devices on the network possible IP forwarding must be enables. To do this permanently add the following line to ```/etc/sysctl.conf```:
 ```bash
 net.ipv4.ip_forward = 1
 ```
@@ -93,7 +93,7 @@ Go into your wireguard root. (e.g. ```cd etc/wireguard```)
 
 For the private key:
 ```bash
-wg keygen| tee device_private.key
+wg genkey | tee device_private.key
 ```
 
 From the private key generate the public key:
