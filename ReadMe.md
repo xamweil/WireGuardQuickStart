@@ -35,7 +35,7 @@ sudo nano /etc/wireguard/wg0.conf
 Add the following content to the file:
 ```bash
 [Interface]
-Adress 10.0.0.1/24
+Adress = 10.0.0.1/24
 ListenPort = 51820      # standard for WireGuard
 PrivateKey = <Add server_private.key>
 
