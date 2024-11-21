@@ -41,7 +41,7 @@ PrivateKey = <Add server_private.key>
 
 #Enable IP forwarding and add NAT
 PostUP = sysctl -w net.ipv4.ip_forward=1; iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o <your network interface> -j MASQUERADE
-PostDown = sysctl -w net.ipv4.ip_forward=0; -t nat -D POSTROUTING -s 10.0.0.0/24 -0 <your network interface> -j MASQUERADE
+PostDown = sysctl -w net.ipv4.ip_forward=0; iptables -t nat -D POSTROUTING -s 10.0.0.0/24 -0 <your network interface> -j MASQUERADE
 ```
 - **<your network interface\>:** Replace with the name of the network adapter (something like wlan0 or eth0). Can be found by typing ```ip addr``` in the terminal. 
 
