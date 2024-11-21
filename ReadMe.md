@@ -107,10 +107,10 @@ Open ```sudo nano etc/wireguard/wg0.conf```
 ### Add a new ```Device```.
 Every peer/device needs a unique IP of the form ```10.0.0.x/32```.
 
-**Add PEER to wg0.conf file.**
+**Add Peer to wg0.conf file.**
 
 ```bash
-[PEER]
+[Peer]
 Publickey = <Add devices public Key>
 AllowedIPs = 10.0.0.2/32
 ```
