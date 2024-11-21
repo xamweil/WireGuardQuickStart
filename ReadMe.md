@@ -10,15 +10,15 @@ sudo apt install wireguard wireguard-tools -y
 ```
 
 ## Set-Up VPN Server
-Create folder to store keys and configuration file, with appropriate permission.
+If not automatically created, create folder to store keys and configuration file, with appropriate permission.
 ```bash
 mkdir /etc/wireguard
 sudo chmod 700 /etc/wireguard
 ```
 ### Generate keys
-Generate the public key for the server. If you have run ```chmod 700``` you might need root access for that: ```sudo -i```.
+Generate the public key for the server. You might need root access for that: ```sudo -i```.
 ```bash
-sudo wg genkey | sudo tee /ec/wireguard/server_private.key
+sudo wg genkey | sudo tee /etc/wireguard/server_private.key
 ```
 
 From the private key generate the public key:
