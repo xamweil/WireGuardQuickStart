@@ -139,7 +139,7 @@ DNS = 8.8.8.8
 
 [Peer]
 PublicKey = <Add public key of the VPN>
-Endpoint = <Add Global IP of your router>
+Endpoint = <Add Global IP of your router>:51820
 AllowedIPs = 0.0.0.0/0
 ```
 
