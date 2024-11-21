@@ -137,7 +137,7 @@ PrivateKey = <Add private key of device>
 Address = 10.0.0.x/32
 DNS = 8.8.8.8
 
-[PEER]
+[Peer]
 PublicKey = <Add public key of the VPN>
 Endpoint = <Add Global IP of your router>
 AllowedIPs = 0.0.0.0/0
